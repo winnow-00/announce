@@ -1,4 +1,4 @@
-const CACHE = 'announce-v1';
+const CACHE = 'announce-v2';
 self.addEventListener('install', function(e){
   self.skipWaiting();
   e.waitUntil(caches.open(CACHE).then(function(c){ return c.addAll(['./','./index.html']); }).catch(function(){}));
